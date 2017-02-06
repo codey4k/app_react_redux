@@ -1,6 +1,6 @@
 module.exports = {
     entry: {
-        app: './src/index.js'
+        app : './src/index.js'
     },
     output: {
         path: './build',
@@ -8,7 +8,7 @@ module.exports = {
     },
     
     resolve: {
-        extensions: ['', '.js']
+        extensions: ['', '.js', '.scss', '.css']
     },
     
     devServer: {
@@ -26,6 +26,11 @@ module.exports = {
                 query: {
                     presets: ['es2015', 'react']
                 }
+            },
+            
+            {
+                test: /\.scss$/,
+                loaders: ["style-loader", "css-loader", "sass-loader"]
             }
         ]
     }

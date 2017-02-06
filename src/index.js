@@ -1,12 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-class App extends React.Component {
-    
-  render() {
-      return ( <h1>Hola mundo</h1>)
-  }
-  
+
+import App from './components/app.js'
+import '../stylesheets/index.scss'
+
+class Index extends React.Component{
+    render(){
+        return (
+            <div className="index">
+                <h1>Contador</h1>
+                <App />
+            </div>
+        )
+    }
 }
 
-ReactDOM.render(<App />, document.body)
+ReactDOM.render(<Index />, document.body)

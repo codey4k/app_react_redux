@@ -1,0 +1,24 @@
+.Nada {
+    width : 50%;
+    height : 100px;
+    background: transparent;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    
+    
+    
+    .content__bottons {
+        margin : auto;
+        width : 80%;
+        background: transparent;
+        display : flex;
+        justify-content : space-around;
+        button {
+            font-size : 1.3em;
+            border : none;
+            padding : 1.2em;
+            background : rgba( olive, .2);
+        }
+    }
+}
